@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try-js</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script language="JavaScript">
+    function validasi() {
+        isAlphabet(document.getElementById('nama'), 'nama lengkap kamu');
+        isAlphanumeric(document.getElementById('alamat'), 'alamat wajib di isi');
+        isNumber(document.getElementById('Telp'), 'Telp harus\ angka saja');
+        isAlphanumeric(document.getElementById('password'), 'password\ hanya boleh alpanumeric');
+    }
+</script>
+
+<body>
+    <input type="button" onclick="prompter()" value="boleh dong kenalan masa ngga si hehe" style="margin-left: 80%;">
+    <form>
+        <pre>
+        silahkan masukan data pribadi anda :
+        nama:
+        <input type="text" name="txtnama" id="nama">
+        alamat:
+        <input type="text" name="txtalamat" id="alamat">
+        no Telpon:
+        <input type="text" name="txttelpon" id="Telp" size="10">
+        masukan password anda:
+        <input type="password" id="password" maxlength="30">
+        <hr>
+        <input type="submit" onclick="validasi () " value="kirim" style="margin-bottom: 8px;">
+        <input type="Reset" value="hapus">
+    </form>
+    <script src="function.js"></script>
+    <script src="isValid.js"></script>
+    <script src="navbar-sticky.js"></script>
+</body>
+</html>
